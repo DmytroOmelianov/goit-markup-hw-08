@@ -1,0 +1,89 @@
+/* .clients {
+    display: flex;
+    text-align: center;
+  }
+  .container-clients {
+    display: flex;
+    padding-bottom: 94px;
+  }
+  .clients-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid #afb1b8;
+    margin-right: 30px;
+    fill: #afb1b8;
+  }
+  .clients-item:nth-child(6n) {
+    margin-right: 0px;
+  }
+  .logo-four {
+    fill: #afb1b8;
+  }
+.client-iten:hover {
+&:hover {
+fill: $primary-blue;
+border: 1px solid $primary-blue;
+}
+}
+.logo-four:hover {
+    fill: $primary-blue;
+  } */
+  .clients {
+    padding-bottom: 94px;
+  }
+   
+
+  .container-clients {
+    @media screen and (min-width: 768px) { 
+      display: flex;
+      flex-wrap: wrap;
+     margin: -15px;
+    }
+    @media screen and (min-width: 1200px) { 
+      display: flex;
+      flex-wrap: wrap;
+     margin: -15px;
+    }
+    
+  }
+  .clients-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+   /*  width: 170px;
+    height: 90px; */
+    border: 1px solid #afb1b8;
+    /* margin-right: 30px; */
+    fill: #afb1b8;
+    @media screen and (min-width: 768px) { 
+      width: calc((100% - 2 * 30px) / 2 );
+      margin: 15px;
+    }
+    @media screen and (min-width: 1200px) { 
+      width: calc((100% - 6 * 30px) / 6 );
+      margin: 15px;
+    }
+   /*  &:not(:last-child) {
+      @media screen and (max-width: 1199px) {
+        margin-bottom: 30px;
+      }
+    } */
+  }
+/*   .clients-item:nth-child(6n) {
+    margin-right: 0px;
+  } */
+  .logo-four {
+    fill: #afb1b8;
+  }
+.client-iten:hover {
+&:hover {
+fill: $primary-blue;
+border: 1px solid $primary-blue;
+}
+}
+.logo-four:hover {
+    fill: $primary-blue;
+  }
