@@ -1,4 +1,55 @@
-/* .sectoin-doing {
+.sectoin-doing {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+/*   .doing {
+    display: flex;
+    flex-wrap: wrap;
+  } */
+  .doing-item {
+    width: 370px;
+   /*  margin-right: 30px; */
+  }
+/*   .doing-iten {
+    width: calc((100% - 60px) / 3);
+  }
+  .doing-item:nth-child(3n) {
+    margin-right: 0px;
+  }
+   */
+  .headline {
+    padding-top: 94px;
+    padding-bottom: 50px;
+    font-family: Roboto;
+    color: $primery-text-kolor;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+   /*  text-align: center; */
+  }
+  .caption {
+   /*  display: flex; */
+    bottom: 0;
+    position: absolute;
+    justify-content: center;
+    padding: 27px 82px;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    margin: 0;
+  
+    letter-spacing: 0.03em;
+    color: $primary-white-color;
+  }
+  .adv {
+    position: relative;
+  }
+
+  /* .sectoin-doing {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -47,62 +98,8 @@
   }
   .adv {
     position: relative;
-  } */
+  }
 
-  .sectoin-doing {
-   /*  padding-top: 94px;
-    padding-bottom: 94px; */
-    
-  }
-  .doing {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-    
-  }
-  .doing-item {
-    /* width: 370px; */
-    /* margin-right: 30px; */
-    @media screen and (min-width: 1200px) { 
-      width: calc((100% - 3 * 30px) / 3 );
-      margin: 15px;
-    }
-  }
- /*  .doing-iten {
-    width: calc((100% - 60px) / 3);
-  }
-  .doing-item:nth-child(3n) {
-    margin-right: 0px;
-  } */
-  
-  .headline {
-    padding-top: 94px;
-    padding-bottom: 50px;
-    font-family: Roboto;
-    color: $primery-text-kolor;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    letter-spacing: 0.03em;
-    text-align: center;
-  }
-  .caption {
-    /* display: flex; */
-    bottom: 0;
-    position: absolute;
-    justify-content: center;
-    padding: 27px 82px;
-    width: 370px;
-    height: 70px;
-    background: rgba(47, 48, 58, 0.8);
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    margin: 0;
-  
-    letter-spacing: 0.03em;
-    color: $primary-white-color;
-  }
-  .adv {
-    position: relative;
-  }
+  */
+
+ 

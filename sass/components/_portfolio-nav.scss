@@ -1,60 +1,22 @@
-/* .buttom-iten {
+.buttom-iten {
     margin-top: 93px;
     margin-bottom: 50px;
-    display: block;
-    justify-content: center;
-    text-align: center;
-  }
-  .button:hover {
-    &:focus {
-      color: $primary-white-color;
-      background-color: $primary-blue;
-    }
-    }
-  .button {
-    border: none;
-    margin-right: 8px;
-    padding: 6px 22px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.63;
-    letter-spacing: 0.03em;
-    background: #f5f4fa;
-    color: $primery-text-kolor;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: color $timing-function,
-    background-color $timing-function;
-  }
-   */
-
-   .buttom-iten {
-   /*  margin-top: 93px;
-    margin-bottom: 50px; */
-    /* display: block; */
-   /*  justify-content: center;
-    text-align: center; */
-    @media screen and (min-width: 768px) { 
-      display: flex;
+    @media screen and (min-width: 768px) {
+      display: block;
       flex-wrap: wrap;
-      flex-basis: 50%;
-    }
-    @media screen and (min-width: 1200px) { 
-      flex-basis: 33.3333%;
-    }
-    &:not(:last-child) {
-      @media screen and (max-width: 1199px) {
-        margin-bottom: 30px;
-      }
+
     }
   }
   .button:hover {
-    &:focus {
+  &:focus {
       color: $primary-white-color;
       background-color: $primary-blue;
-    }
-    }
+    } 
+  }
   .button {
+    @media screen and (min-width: 768px) {
+      width: 15%;
+    }
     border: none;
     /* margin-right: 8px; */
     padding: 6px 22px;
@@ -70,3 +32,35 @@
     background-color $timing-function;
   }
   
+/* .buttom-iten {
+    margin-top: 93px;
+    margin-bottom: 50px;
+    display: block;
+    justify-content: center;
+    text-align: center;
+  }
+  .button:hover {
+  .button:focus {
+      color: $primary-white-color;
+      background-color: $primary-blue;
+    } 
+  }
+  .button {
+    border: none;
+    margin-right: 8px;
+    padding: 6px 22px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+    background: #f5f4fa;
+    color: $primery-text-kolor;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: color $timing-function,
+    background-color $timing-function;
+  }
+  
+
+    */
+   
