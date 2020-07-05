@@ -1,23 +1,28 @@
 .container-hero {
-  text-align: center;
+  position: relative;
 }
-/* .flex {
-  display: flex;
-  margin-left: 85px;
-}
-.flex-link {
-  margin-right: 40px;
-}
-.flex {   
-        .flex-link:last-child  {
-        margin-right: 0;
+.flex {
+  @media screen and(min-width:480px) {
+    display: flex;
+    margin: -25px;
+    /* margin-left: 85px; */
   }
-} */
+ 
+}
+.flex-link { 
+  @media screen and (min-width:480px) {
+   width: calc((100% - 3 * 50) / 3);
+   margin: 25px;
+}
+}
 .container {
  /*  width: 1200px; */
   margin-left: auto;
   margin-right: auto;
  /*  padding: 0 15px; */
+}
+.container-logo {
+  flex-wrap: nowrap;
 }
 
 .logo {
@@ -37,9 +42,12 @@
   color: $primery-text-kolor;
 }
 .link {
-  /* display: block; */
-  /* padding-top: 32px;
-  padding-bottom: 32px; */
+  @media screen and (max-width:479px) {
+    display: inline-block;
+  }
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   position: relative;
 }
 .link:active {
@@ -79,6 +87,7 @@
   line-height: 1.4;
   letter-spacing: 0.02em;
 }
+
 }
 .link-link:visited {
   color: $title-text-kolor;
@@ -105,13 +114,59 @@
   color: $title-text-kolor;
   display: inline-block;
 }
+.menu-button {
+  display: iline-flex;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  
+    .icon-close {
+      display: none;
+    }
+@media screen and(min-width:480px) {
+  display: none;
+}
+}
+.menu-button.is-open .icon-close{
+display: block;
+}
+.menu-button.is-open .icon-menu{
+  display: none;
+  }
+  .container-menu{
+    text-align: center;
+   /*  padding: 20px; */
+    background-color: $primary-white-color;
+
+ @media screen and(max-width:478px){
+  position: absolute;
+  top: 100%;
+  display: none;
+  left: 0;
+  width: 100%;
+  &.is-open{
+    display: block;
+  }
+ }
+ @media screen and(min-width:480px){
+   display: flex;
+   flex-grow: 1;
+   justify-content: space-between;
+  }
+}
 .main {
- /*  display: flex; */
+  @media screen and(min-width:480px){
+  display: flex;
   align-items: center;
 }
-.left {
-  margin-left: auto;
 }
+/* .left {
+  @media screen and(min-width:480px) {
+    display: flex;
+    margin-left: 85px;
+  }
+} */
 /* .right {
   margin-right: 50px;
 } */

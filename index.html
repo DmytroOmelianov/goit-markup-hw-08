@@ -17,30 +17,52 @@
 <body>
     <!-- Шапка сайта -->
 
-    <header>
+    <header class="container-hero">
         <nav class="container site-nav main">
-            <a href=""><span class="logo">Web</span>
-                <span class="logo-two">Studio</span></a>
-            <ul class="flex ">
-                <li class="flex-link">
-                    <a href="" class="link active active-underline">Студия</a>
-                </li>
-                <li class="flex-link">
-                    <a href="./portfolio.html" class="link ">Портфолио</a>
-                </li>
-                <li class="flex-link">
-                    <a href="" class="link">Контакты</a>
-                </li>
-            </ul>
-            <ul class="flex left">
-                <li class="right"><a href="mailto:info@devstudio.com" class="link-link">
-                        <svg width="16" height="11.2" class="phone-icon">
-                            <use href="./images/sprite.svg#icon-mail"></use>
-                        </svg>info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111" class="link-link"><svg width="16" height="11.2" class="phone-icon">
-                            <use href="./images/sprite.svg#icon-phone"></use>
-                        </svg>+38 096 111 11 11</a></li>
-            </ul>
+
+            <buttom type="button" class="menu-button is-open" aria-expanded="false" aria-controls="container-menu"
+                data-menu-button>
+                <svg width="40" heigth="40" aria-label="Переключатель мобильного меню">
+                    <use class="icon-menu" href="./images/sprite.svg#icon-3line"></use>
+                    <use class="icon-close" href="./images/sprite.svg#icon-close"></use>
+                </svg>
+            </buttom>
+               
+                <div class="container-menu is-open" is="container-menu" data-menu>
+                     <div class="container-logo">
+                        <a href=""><span class="logo">Web</span>
+                            <span class="logo-two">Studio</span></a>
+                     </div>
+                   
+                        <ul class="flex ">
+                            
+                            <li class="flex-link">
+                                <a href="" class="link active active-underline">Студия</a>
+                            </li>
+                            <li class="flex-link">
+                                <a href="./portfolio.html" class="link ">Портфолио</a>
+                            </li>
+                            <li class="flex-link">
+                                <a href="" class="link">Контакты</a>
+                            </li>
+                        </ul>
+
+
+                  
+                        <ul class="left">
+                            <li class="right"><a href="mailto:info@devstudio.com" class="link-link">
+                                    <svg width="16" height="11.2" class="phone-icon">
+                                        <use href="./images/sprite.svg#icon-mail"></use>
+                                    </svg>info@devstudio.com</a></li>
+                            <li><a href="tel:+380961111111" class="link-link"><svg width="16" height="11.2"
+                                        class="phone-icon">
+                                        <use href="./images/sprite.svg#icon-phone"></use>
+                                    </svg>+38 096 111 11 11</a></li>
+                        </ul>
+                  
+                </div>
+
+            
         </nav>
     </header>
 
@@ -145,7 +167,16 @@
                 <h2 class="headline">Наша команда</h2>
                 <ul class="our-team">
                     <li class="team-iten">
-                        <img src="./images/johnsmith.jpg" alt="johnsmith" width="270">
+                        <img srcset="
+                        ./images/kolyax.jpg 450w,
+                         ./images/kolya.jpg 354w,
+                         ./images/kolya.jpg 270w
+                         " 
+                         sizes="(min-width: 1200px) 25vw, 
+                         (min-width: 768px) 50vw,
+                         100vw
+                         "
+                         src="./images/kolyax.jpg" alt="kolyax" >
                         <h3 class="name">Николай Кучеренко</h3>
                         <h4 class="user">Product Designer</h4>
                         <a href="" class="button-btn icon-position">
@@ -171,7 +202,16 @@
 
                     </li>
                     <li class="team-iten">
-                        <img src="./images/Marta.jpg" alt="Marta" width="270">
+                        <img srcset="
+                        ./images/olgax.jpg 450w,
+                         ./images/olga.jpg 354w,
+                         ./images/olga.jpg 270w
+                         " 
+                         sizes="(min-width: 1200px) 25vw, 
+                         (min-width: 768px) 50vw,
+                         100vw
+                         "
+                         src="./images/olgax.jpg" alt="olgax" >
                         <h3 class="name">Ольга Иванова</h3>
                         <h4 class="user">Frontend Develope</h4>
                         <a href="" class="button-btn icon-position">
@@ -197,7 +237,16 @@
 
                     </li>
                     <li class="team-iten">
-                        <img src="./images/Robert.jpg" alt="Robert" width="270">
+                        <img srcset="
+                        ./images/andryx.jpg 450w,
+                         ./images/andry.jpg 354w,
+                         ./images/andry.jpg 270w
+                         " 
+                         sizes="(min-width: 1200px) 25vw, 
+                         (min-width: 768px) 50vw,
+                         100vw
+                         "
+                         src="./images/andryx.jpg" alt="andryx" >
                         <h3 class="name">Андрей Шевченко</h3>
                         <h4 class="user">Marketing</h4>
                         <a href="" class="button-btn icon-position">
@@ -223,7 +272,16 @@
 
                     </li>
                     <li class="team-iten">
-                        <img src="./images/Martin.jpg" alt="Martin" width="270">
+                        <img srcset="
+                        ./images/ivanx.jpg 450w,
+                         ./images/ivan.jpg 354w,
+                         ./images/ivan.jpg 270w
+                         " 
+                         sizes="(min-width: 1200px) 25vw, 
+                         (min-width: 768px) 50vw,
+                         100vw
+                         "
+                         src="./images/ivanx.jpg" alt="ivanx" >
                         <h3 class="name">Иван Николаев</h3>
                         <h4 class="user">UI Designer</h4>
                         <a href="" class="button-btn icon-position" width="20px" height="20px">
@@ -333,17 +391,17 @@
                             </svg>
                         </a></div>
                 </ul>
-               <form class="footer-form" autocomplete="off">
-                <ul class="hi">
-                    <H2 class="mailing">Подпишитесь на рассылку</H2>
-                    <!-- <a href="" class="footer-mail">E-mail</a> -->
-                    <div class="form-footer">
-                        <label for="mail"></label>
-                        <input type="mail" name="mail" id="mail" placeholder="E-mail" required>
-                    </div>
-                </ul>
-                <button class="footer-button">Подписаться</button>
-               </form>
+                <form class="footer-form" autocomplete="off">
+                    <ul class="hi">
+                        <H2 class="mailing">Подпишитесь на рассылку</H2>
+                        <!-- <a href="" class="footer-mail">E-mail</a> -->
+                        <div class="form-footer">
+                            <label for="mail"></label>
+                            <input type="mail" name="mail" id="mail" placeholder="E-mail" required>
+                        </div>
+                    </ul>
+                    <button class="footer-button">Подписаться</button>
+                </form>
                 <!-- <a class="footer-button">
                     Подписаться
                 </a> -->
@@ -391,13 +449,14 @@
                 <div class="modal-policy">
                     <label class="label">
                         <input class="checkbox" type="checkbox" name="term">
-                        <span class="checkbox-icon"></span><span class="text-policy">Соглашаюсь с рассылкой и принимаю </span>
+                        <span class="checkbox-icon"></span><span class="text-policy">Соглашаюсь с рассылкой и принимаю
+                        </span>
                         <a class="link-policy" href="">Условия договора</a>
                     </label>
                 </div>
                 <button tupe="submit" class="modal-btn">Отправить</button>
             </form>
-            <button data-modal-close tupe="submit" class="close-btn" >
+            <button data-modal-close tupe="submit" class="close-btn">
                 <svg width="11" height="11">
                     <use href="./images/sprite.svg#icon-xxx"></use>
                 </svg>
@@ -422,7 +481,7 @@
                 });
         })();
     </script>
-     <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
